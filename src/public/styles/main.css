@@ -10,13 +10,14 @@
     --background--color--light: #ECECEC;
     --background--color--dark: #000000;
     --color--text--light: #333533;
+    --color--text--second: #6c757d;
     --color--text--dark: #202020;
     --color--text--register: #eb5e28;
     --color--button--light: #eb5e28;
     --color--button--dark: #dc2f02;
     --color--text--button: #ffffff;
     -color-delete: #EB3B35;
-    --color--saibaMais: #ff0a54;
+    --color--second: #ff0a54;
 }
 
 body, html{
@@ -24,7 +25,8 @@ body, html{
     height: 100%;
     background-color: var(-background--color--light);
     font-size: 93,75%;
-    font-family: 'Poppins';
+    font-family: 'Roboto', sans-serif;
+    min-height: 4000px;
 }
 
 .container{
@@ -37,10 +39,6 @@ body, html{
 }
 
 .header{
-    /* display: flex;
-    justify-content: space-between;
-    padding: 1.5rem; */
-
     position: fixed;
     top: 0;
     left: 0;
@@ -50,6 +48,22 @@ body, html{
     align-items: center;
     padding: 30px 40px;
     z-index: 10;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color--text--light);
+}
+
+.logo span{
+    color: var(--color--button--dark);
+}
+
+.logo i{
+    color: var(--color--text--light);
+    margin-left: 0.1rem;
+    font-size: 1rem;
 }
 
 .menu__principal ul{
@@ -63,7 +77,8 @@ body, html{
 }
 
 .menu__principal li a{
-    color: var(--color--text--light)
+    color: var(--color--text--light);
+    font-weight: bold;
 }
 
 #register__pet a{
@@ -72,6 +87,19 @@ body, html{
     text-transform: uppercase;
 }
 
+.stick{
+    background: var( --color--text--button);
+    transition: 0.7s;
+    box-shadow: 3px 5px 15px -9px #0000;
+    /* opacity: 0.8; */
+}
+
+/* .stick nav a{
+} */
+
+/* .stick #register__pet a{
+    color: #fff;
+} */
 
 .banner{
     margin-top: 5rem;
@@ -84,8 +112,18 @@ body, html{
     height: 500px;
 }
 
+.menu__banner h1{
+    letter-spacing: 0.2rem;
+}
+
+.menu__banner span{
+    color: var(--color--second);
+    /* font-size: 3rem; */
+}
+
 .information{
     margin: 1rem 0;
+    color: var(--color--text--second);
 }
 
 .adopt{
@@ -104,8 +142,13 @@ body, html{
     align-items: center;
     text-transform: uppercase;
     margin-right: 2rem;
-    border-radius: 5rem;
+    border-radius: 50px 50px 0px 50px;
+    font-family: 'Poppins';
+    transition: 0.5s;
+}
 
+.adopt .adopt__pet:hover{
+    background-color: var(--color--second);
 }
 
 .adopt span a{
@@ -113,6 +156,6 @@ body, html{
 }
 
 .adopt span a:hover{
-    color: var(--color--saibaMais);
+    color: var(--color--second);
 }
 
