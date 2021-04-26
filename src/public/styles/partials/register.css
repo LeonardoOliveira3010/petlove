@@ -1,0 +1,189 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    
+}
+
+#page-register{
+    /* overflow: hidden; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+#page-register  form{
+    width: 90%;
+    margin: 2rem auto;
+
+}
+
+form h1{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+form p{
+    display: flex;
+    align-items: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #212529;
+    line-height: 50px;
+}
+
+.fa-heart:before {
+    content: "\f004";
+    padding-left: 10px;
+    color: #322153;
+}
+
+form{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f0f0f5;
+    margin-top: 80px;
+    border-radius: 8px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form fieldset{
+    margin-top: 40px;
+    border: 0;
+}
+
+form fieldset legend{
+    margin-bottom: 30px;
+}
+
+fieldset h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+fieldset small{
+    color: #495057;
+}
+
+form .field{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+form label{
+    font-size: 14px;
+    color: #495057;
+    margin: 0.8rem;
+}
+
+.field input, select{
+    margin-bottom: 20px;
+    background-color: #e5e5e5;
+    border: 0;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: rgba(50, 33, 83, 0.7);
+    width: 350px;
+    display: block;
+    display: block;
+    margin-top: 0.8rem;
+    padding-left: 0.8rem;
+}
+
+.field select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.field__group{
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+}
+
+.field__group label{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* width: 350px; */
+}
+
+.field__group .picture label{
+    flex-direction: column;
+}
+
+.field__group input{
+    width: 350px;
+    background-color: #E5E5E5;
+    padding: 0.8rem;
+    margin-bottom: 10px;
+    margin-top: 0.8rem;
+}
+
+form .field__group .field + .field{
+    margin-left: 20px;
+}
+
+textarea{
+    resize: none;
+    border: 0;
+    border-radius: 4px;
+    background-color: #e5e5e5;
+    font-size: 16px;
+    color: rgba(50, 33, 83, 0.7);
+    margin-top: 0.8rem;
+    width: 726px;
+}
+
+form .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    
+}
+
+form .btn a{
+    width: 200px;
+    padding: 10px;
+    background-color: #ff0a54;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form .btn button{
+    width: 200px;
+    padding: 10px;
+    background-color: #34CB79;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0.8rem;
+    text-transform: uppercase;
+}
+
+form button:hover{
+    background-color: #08a045;
+}
