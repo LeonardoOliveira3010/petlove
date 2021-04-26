@@ -12,21 +12,103 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <a href="../view/index.html" class="logo">PET <span>LOVE <i class="fas fa-paw"></i></span></a>
+    <div id="page-register">
+        <header class="header">
+            <a href="../view/index.html" class="logo">PET <span>LOVE <i class="fas fa-paw"></i></span></a>
+        </header>
 
-        <nav class="menu__principal">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Quem somos</a></li>
-                <li><a href="#">contato</a></li>
-                <li id="register__pet"><a href="../view/register.html">cadastrar</a></li>
-                <!-- <li id="adopt__pet"><a href="#">adotar</a></li> -->
-            </ul>
-            
-        </nav>
+        <form action="" autocomplete="off">
+            <h1>Cadastre o pet para adoção</h1>
+            <p>Ajude nossos amigos a encontrar um lar <i class="fas fa-heart"></i></p>
+            <!--Fieldset é um agrupamento de dados dentro do form-->
+            <fieldset>
+                <legend>
+                    <h2>Dados da entidade <small> (informações pessoais)</small></h2>
+                </legend>
+                
+                <div class="field">
+                    <label for="name">Seu nome:
+                        <input type="text" name="name" id="name" placeholder="Ex: Leonardo Oliveira">
+                    </label>
+                    
 
-    </header>
+                    <label for="fone">Telefone<small> (whatsapp):</small> 
+                        <input class="fone" type="text" name="fone" id="fone" placeholder="Ex: 11 99999-9999">
+                    </label>
+                    
+
+                    <label for="email">E-mail:
+                        <input type="email" name="email" id="email" placeholder="Ex: exemplo@gmail.com">
+                    </label>
+                    
+                </div>
+        
+                <div class="field">
+                    <label for="address">Endereço:
+                        <input type="text" name="address" id="address" placeholder="Rua tal">
+
+                    </label>
+
+                    <label for="address2">Número/Complemento:
+                        <input type="text" name="address2" id="address2" placeholder="Numero 154, apto 10">
+                    </label>  
+                    
+                    <label for="state">Estado:
+                        <select name="uf" id="">
+                            <option value="">Selecione o Estado</option>
+                        </select>
+                    </label>
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>Informações <small>(pet)</small></h2></legend>
+
+                <div class="field">
+                    <label for="name">Nome do pet:
+                    <input type="text" name="name" id="name" placeholder="Ex: Amarelinho">
+
+                    </label>
+
+                    <label for="species">Especie:
+                        <input type="text" name="species" placeholder="Cachorro">
+                    </label>
+                
+                    <label for="port">Porte:
+                        <select name="port" id="">
+                            <option value="">Selecione o porte</option>
+                            <option value="0">Pequeno porte</option>
+                            <option value="1">Médio porte</option>
+                            <option value="2">Grande porte</option>
+                        </select>
+    
+                    </label>
+                </div>    
+    
+                <div class="field__group">
+                    <div class="picture">
+                        <label for="photograph">Foto do pet:
+                            <input type="file" name="photograph" id="photograph">
+                            <input type="file" name="photograph" id="photograph">
+                            <input type="file" name="photograph" id="photograph">
+                        </label>
+                    </div>
+
+                    <label for="story">História do pet:
+                        <textarea name="story" id="" cols="30" rows="10"></textarea>
+                    </label>
+
+                </div>
+            </fieldset>
+            <div class="btn">
+                <a href="#">cancelar</a>
+                <button class="done" type="submit" preve>Cadastrar o pet</button>
+            </div>
+        </form>
+    </div>
+
+
 
     <script src="https://kit.fontawesome.com/392610c469.js" crossorigin="anonymous"></script>
 </body>
