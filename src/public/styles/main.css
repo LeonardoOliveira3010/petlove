@@ -26,7 +26,8 @@ body, html{
     background-color: var(-background--color--light);
     font-size: 93,75%;
     font-family: 'Roboto', sans-serif;
-    min-height: 4000px;
+    /* min-height: 4000px; */
+    /* overflow-y: hidden; */
 }
 
 .container{
