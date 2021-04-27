@@ -47,6 +47,7 @@ form p{
 
 form{
     max-width: 1200px;
+    max-height: 1020px;
     margin: 0 auto;
     background-color: #f0f0f5;
     margin-top: 80px;

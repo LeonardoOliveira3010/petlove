@@ -26,18 +26,18 @@ body, html{
     background-color: var(-background--color--light);
     font-size: 93,75%;
     font-family: 'Roboto', sans-serif;
-    /* min-height: 4000px; */
+    min-height: 4000px;
     /* overflow-y: hidden; */
 }
 
-.container{
+/* .container{
     background-image: url(../assets/background__menu.jpg);
     background-repeat: no-repeat;
     height: 665px;
     background-position-y: -75px;
     background-position-x: 90px;
     display: flex;
-}
+} */
 
 .header{
     position: fixed;
@@ -47,14 +47,15 @@ body, html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 40px;
+    padding: 0 2rem;
+    height: 80px;
     z-index: 10;
 }
 
 .logo{
     font-size: 2rem;
     font-weight: bold;
-    color: var(--color--text--light);
+    color: var(--color--text--button);
 }
 
 .logo span{
@@ -62,7 +63,7 @@ body, html{
 }
 
 .logo i{
-    color: var(--color--text--light);
+    color: var(--color--text--button);
     margin-left: 0.1rem;
     font-size: 1rem;
 }
@@ -77,15 +78,37 @@ body, html{
     
 }
 
+.menu__principal li .inicio{
+    color: var(--color--text--register);
+}
+
 .menu__principal li a{
-    color: var(--color--text--light);
+    color: var(--color--text--button);
     font-weight: bold;
+}
+
+.menu__principal li a:hover{
+    color: var(--color--text--register);
+}
+
+.register__pet{
+    background-color: violet;
+    height: 40px;
 }
 
 #register__pet a{
     font-weight: 600;
-    color: var(--color--text--register);
+    /* color: var(--color--text--register); */
     text-transform: uppercase;
+    padding: 10px;
+    border: 1px solid var(--color--text--button);
+    border-radius: 50px 50px 0px 50px;
+}
+
+#register__pet a:hover{
+    background-color: var(--color--text--register);
+    color: var(--color--text--button);
+
 }
 
 .stick{
@@ -93,28 +116,68 @@ body, html{
     transition: 0.7s;
     box-shadow: 3px 5px 15px -9px #0000;
     /* opacity: 0.8; */
+    -webkit-box-shadow: 4px 7px 15px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 7px 15px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 7px 15px 0px rgba(0,0,0,0.75);
 }
 
-/* .stick nav a{
-} */
+.stick nav a{
+    color: var(--color--text--dark);
+}
 
+.stick .logo{
+    color: var(--color--text--dark);
+}
+
+.stick i{
+    color: var(--color--text--dark);
+}
+
+.stick #register__pet a{
+    color: var(--color--text--register);
+    border: 1px solid var(--color--text--register);
+}
+
+.stick #register__pet a:hover{
+    color: var(--color--text--button);
+
+}
 /* .stick #register__pet a{
     color: #fff;
 } */
 
 .banner{
-    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image:url(../assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 720px;
 }
 
 .menu__banner{
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
     /* margin-top: 5rem; */
     width: 40%;
     height: 500px;
 }
 
+.photo{
+    width: 100%;
+}
+
+.photo img{
+    width: 100%; 
+}
+
 .menu__banner h1{
     letter-spacing: 0.2rem;
+    color: var(--color--text--button);
+    font-family: 'Coda Caption', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
 }
 
 .menu__banner span{
@@ -124,7 +187,7 @@ body, html{
 
 .information{
     margin: 1rem 0;
-    color: var(--color--text--second);
+    color: var(--color--text--button);
 }
 
 .adopt{
@@ -141,22 +204,60 @@ body, html{
     color: var(--color--text--button);
     display: flex;
     align-items: center;
-    text-transform: uppercase;
     margin-right: 2rem;
     border-radius: 50px 50px 0px 50px;
-    font-family: 'Poppins';
+    border: 1px solid;
+    font-family: 'Coda Caption', sans-serif;
     transition: 0.5s;
+    -webkit-box-shadow: 4px 7px 15px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 7px 15px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 7px 15px 0px rgba(0,0,0,0.75);
 }
 
 .adopt .adopt__pet:hover{
-    background-color: var(--color--second);
+    background-color: transparent;
+    border: 1px solid var(--color--text--register);
 }
 
 .adopt span a{
-    color: var(--color--text--dark);
+    color: var(--color--text--button);
 }
 
 .adopt span a:hover{
     color: var(--color--second);
 }
 
+.content{
+    padding: 3rem 2rem;
+}
+
+.content__petz{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.container__petz{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.information__petz{
+    width: 40%;
+}
+
+
+.container__petz img{
+    border-radius: 260px 0 0 260px;
+    
+}
+
+.content__petz h2{
+    font-size: 2rem;
+}
+
+.information__petz p{
+    margin: 1rem 0;
+}
